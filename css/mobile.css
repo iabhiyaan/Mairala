@@ -1,0 +1,98 @@
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+ 
+    .header ul,
+    .header__brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header ul li {
+        padding-left: 7px;
+    }
+
+    .hero__slogan {
+        font-size: 44px;
+    }
+
+    .button__transparent {
+        padding: 14px 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .similar__column--title {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+
+    .services__column--content {
+        color: #7b6c63;
+        width: 100%;
+        float: none;
+        position: relative;
+        outline: 1px solid black;
+    }
+
+    .services__column--content::after {
+        width: 100%;
+        height: 125px;
+        background: white;
+        left: 0;
+        top: 91%;
+        transform-origin: top left;
+        transform: skewY(5deg);
+    }
+
+    .services__column--img {
+        width: 100%;
+        float: none;
+    }
+    
+    .image {
+        float: none;
+    }
+
+    .name {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding-top: 0px;
+    }
+    .email {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+
+    .second-svg {
+        margin-left: 0px;
+        position: relative;
+        top: 41px;
+    }
+
+    .message {
+        margin-left: 110px;
+    }
+
+    #black {
+        margin: 0;
+    }
+
+    .similar__column {
+        padding: 25px 0;
+    }
+
+    .footer-area {
+        display: none;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}

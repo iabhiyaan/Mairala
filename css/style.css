@@ -292,6 +292,7 @@ button:focus {
     text-transform: uppercase;
 }
 
+/* bottom-animation */
 @keyframes bottom {
     0% {
         transform: translateY(140px);

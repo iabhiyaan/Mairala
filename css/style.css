@@ -266,32 +266,55 @@ button:focus {
 }
 
 .hover-image:hover .hover-spacer {
-    transition: 1s;
+    transition: 3s;
     transform: scale(1);
+}
+
+
+/* top-animation */
+
+@keyframes top {
+    0% {
+        transform: translateY(-140px);
+    }
+    100% {transform: translateY(0);}
+}
+
+.hover-image:hover .animation-top {
+    animation-name: top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 .animation-top {
     position: relative;
-    animation-name: top;
-    animation-duration: 2s;
     padding-top: 100px;
     text-transform: uppercase;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+}
+
+@keyframes bottom {
+    0% {
+        transform: translateY(140px);
+    }
+    100% {transform: translateY(0);}
 }
 
 .animation-bottom {
-    position: relative;
     text-transform: uppercase;
+    position: relative;
+    padding-top: 10px;
+}
+
+.hover-image:hover .animation-bottom {
+    
     animation-name: bottom;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .hover-spacer {
+    padding-top: 15px;
     transform: scale(0);
-
 }
 
 #latest {
